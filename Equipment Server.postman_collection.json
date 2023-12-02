@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "7213ab95-958b-402a-b2c6-4b8adc8cb916",
+		"name": "Equipment Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24681373"
+	},
+	"item": [
+		{
+			"name": "http://54.234.57.29/equipment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://54.234.57.29/equipment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/equipment/d7dbaafa-216c-48e6-b844-82725d121dc6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://54.234.57.29/equipment/d7dbaafa-216c-48e6-b844-82725d121dc6"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/equipment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"78676582-8aa8-4bc3-97df-d8434b96fb23\",\n    \"model\":\"hello\",\n    \"serialnumber\":\"112222A\",\n    \"manufacturer_id\":\"46910fcf-3c74-49a1-95c1-72997598947d\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.57.29/equipment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/equipment/d7dbaafa-216c-48e6-b844-82725d121dc6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://54.234.57.29/equipment/d7dbaafa-216c-48e6-b844-82725d121dc6"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/equipment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model\":\"Suv3\",\n    \"manufacturer_id\":\"46910fcf-3c74-49a1-95c1-72997598947d\",\n    \"serialnumber\": \"A00011\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.57.29/equipment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/equipment/manufacturer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"7427508f-89ec-4c14-9db5-13585dce3a73\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.57.29/equipment/manufacturer"
+			},
+			"response": []
+		}
+	]
+}

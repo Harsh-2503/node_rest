@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "888d7677-3ee3-4b98-adff-6d7855d34dd4",
+		"name": "Manufacturer Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24681373"
+	},
+	"item": [
+		{
+			"name": "http://54.234.57.29/manufacturer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":39344\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.57.29/manufacturer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/manufacturer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Meta\",\n    \"id\": \"da7d6166-57b3-4b87-9c3e-4a4df9078485\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.57.29/manufacturer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/manufacturer/da7d6166-57b3-4b87-9c3e-4a4df9078485",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://54.234.57.29/manufacturer/da7d6166-57b3-4b87-9c3e-4a4df9078485"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/manufacturer/da7d6166-57b3-4b87-9c3e-4a4df9078485",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://54.234.57.29/manufacturer/da7d6166-57b3-4b87-9c3e-4a4df9078485"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/manufacturer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://54.234.57.29/manufacturer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://54.234.57.29/manufacturer/equipment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"46910fcf-3c74-49a1-95c1-72997598947d\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.57.29/manufacturer/equipment"
+			},
+			"response": []
+		}
+	]
+}

@@ -20,7 +20,7 @@ Build Script: Includes a build script that uses TypeScript Compiler (tsc) for co
 
 Clone the repository from Bitbucket:
 ssh: git clone git@bitbucket.org:pen-stack/node_rest.git
-https: git clone https://theMusubi@bitbucket.org/pen-stack/node_rest.git
+https: git clone git@github.com:Harsh-2503/node_rest.git
 
 My Node Version: v18.18.2
 
@@ -113,17 +113,6 @@ curl --location 'http://54.234.57.29/equipment' \
 delete
 curl --location --request DELETE 'http://54.234.57.29/equipment/b3fb3f9d-8446-4063-91a2-9d06516d0933'
 
-# server ssh
-
-Since I don't have you public ssh keys to add to the server
-I am attaching a drive link for the pem file to access the ec2 server and inviting Mr victor@beamdynamics.io as well as backenddeveloper@beamdynamics.io
-
-Link: https://drive.google.com/drive/folders/1SYfwJ2s2R7SFjvU0z62Wpozkzvg5SqlW?usp=drive_link
-
-Navigate to the directory where node_rest.pem file is present
-
-ssh: ssh -i node_rest.pem ubuntu@ec2-54-234-57-29.compute-1.amazonaws.com
-
 # pm2
 
 to see last 100 pm2 out logs
@@ -145,19 +134,3 @@ pm2 restart node_rest
 # postgres database
 
 The database is downloaded on the ec2 instance
-
-commands to use database
-sudo -u postgres psql
-\c node_rest
-
-to see tables
-\dt
-
-Databse Creadentials
-
-PORT = 4999
-DB_USER = postgres
-DB_NAME = node_rest
-DB_PASSWORD = 8961Test
-DB_PORT = 5432
-DB_HOST = localhost
